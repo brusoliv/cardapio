@@ -2,84 +2,58 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cardápio Interativo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Cafill Refill</h1>
-    <p>Explore nosso cardápio digital</p>
+    <p>Seu cardápio digital interativo</p>
     <nav>
       <button onclick="filterMenu('all')">Tudo</button>
-     <!--<button onclick="filterMenu('bebidas')">Bebidas</button>
-      <button onclick="filterMenu('lanches')">Lanches</button>-->
+      <button onclick="filterMenu('bebidas')">Bebidas</button>
+      <button onclick="filterMenu('lanches')">Lanches</button>
     </nav>
   </header>
 
   <main id="menu">
     <div class="item bebidas">
-  <h2>Café Espresso</h2>
-  <p>Intenso e encorpado</p>
-  <span class="price" data-price="6.00">R$ 6,00</span>
+      <h2>Café Espresso</h2>
+      <p>Intenso e encorpado</p>
+      <span class="price" data-price="6.00">R$ 6,00</span>
+      <div class="controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <input type="number" value="1" min="1" readonly>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <div class="total">Total: R$ <span class="total-price">6.00</span></div>
+      <button class="add-to-cart" onclick="addToCart(this)">Selecionar e Ir ao Pagamento</button>
+    </div>
 
-  <div class="controls">
-    <button onclick="changeQty(this, -1)">-</button>
-    <input type="number" value="0" min="0" readonly>
-    <button onclick="changeQty(this, 1)">+</button>
-  </div>
-
-  <div class="total">
-    Total: R$ <span class="total-price">6.00</span>
-  </div></div>
-
-      <div class="item bebidas">
-  <h2>Cappucino</h2>
-  <p>Cremoso com espuma</p>
-  <span class="price" data-price="8.00">R$ 8,00</span>
-
-  <div class="controls">
-    <button onclick="changeQty(this, -1)">-</button>
-    <input type="number" value="0" min="0" readonly>
-    <button onclick="changeQty(this, 1)">+</button>
-  </div>
-
-  <div class="total">
-    Total: R$ <span class="total-price">8.00</span>
-  </div></div>
-
-      <div class="item bebidas">
-  <h2>Chocolate Quente</h2>
-  <p>Marshmallow e Jurupinga</p>
-  <span class="price" data-price="8.00">R$ 8,00</span>
-
-  <div class="controls">
-    <button onclick="changeQty(this, -1)">-</button>
-    <input type="number" value="0" min="0" readonly>
-    <button onclick="changeQty(this, 1)">+</button>
-  </div>
-
-  <div class="total">
-    Total: R$ <span class="total-price">8.00</span>
-  </div></div>
-
-  <button class="add-to-cart" onclick="addToCart(this)">Selecionar e Ir ao Pagamento</button>
-
+    <div class="item lanches">
+      <h2>Sanduíche Natural</h2>
+      <p>Frango com salada</p>
+      <span class="price" data-price="12.00">R$ 12,00</span>
+      <div class="controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <input type="number" value="1" min="1" readonly>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <div class="total">Total: R$ <span class="total-price">12.00</span></div>
+      <button class="add-to-cart" onclick="addToCart(this)">Selecionar e Ir ao Pagamento</button>
+    </div>
   </main>
 
-  <footer>
-  <center>  <p>© 2025 Cafill Refill</p></center>
-  </footer>
+  <div id="cart-summary" class="cart-summary hidden"></div>
 
   <div id="cart-confirmation" class="cart-confirmation hidden">
-  <h3>Confira seu pedido:</h3>
-  <div id="confirm-details"></div>
-  <button onclick="enviarParaWhatsapp()">Confirmar Pedido no WhatsApp</button>
-</div>
+    <h3>Confira seu pedido:</h3>
+    <div id="confirm-details"></div>
+    <button onclick="enviarParaWhatsapp()">Confirmar Pedido no WhatsApp</button>
+  </div>
 
-
-  
+  <footer><p>© 2025 Cafill Refill</p></footer>
   <script src="script.js"></script>
-  
 </body>
 </html>
