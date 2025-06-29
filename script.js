@@ -119,3 +119,8 @@ function finalizarPedido() {
   // Redireciona
   window.open(url, '_blank');
 }
+<div id="cart-confirmation" class="cart-confirmation hidden">
+  <h3>Confira seu pedido:</h3>
+  <div id="confirm-details"></div>
+  <button onclick="enviarParaWhatsapp()">Confirmar Pedido no WhatsApp</button>
+</div>

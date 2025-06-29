@@ -114,3 +114,31 @@ main {
   font-size: 1.1rem;
 }
 
+.cart-confirmation {
+  background: #e0f7fa;
+  border: 1px solid #b2ebf2;
+  padding: 1.5rem;
+  margin: 2rem;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.cart-confirmation.hidden {
+  display: none;
+}
+
+.cart-confirmation button {
+  margin-top: 1rem;
+  background: #25d366;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart-confirmation button:hover {
+  background: #1da851;
+}

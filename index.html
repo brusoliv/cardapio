@@ -65,16 +65,21 @@
 
   <button class="add-to-cart" onclick="addToCart(this)">Selecionar e Ir ao Pagamento</button>
 
-
-
-
-
   </main>
 
   <footer>
   <center>  <p>© 2025 Cafill Refill</p></center>
   </footer>
 
+  <div id="cart-confirmation" class="cart-confirmation hidden">
+  <h3>Confira seu pedido:</h3>
+  <div id="confirm-details"></div>
+  <button onclick="enviarParaWhatsapp()">Confirmar Pedido no WhatsApp</button>
+</div>
+
+
+  
   <script src="script.js"></script>
+  
 </body>
 </html>
