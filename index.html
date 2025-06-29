@@ -24,26 +24,75 @@
       <span class="price" data-price="6.00">R$ 6,00</span>
       <div class="controls">
         <button onclick="changeQty(this, -1)">-</button>
-        <input type="number" value="1" min="1" readonly>
+        <input type="number" value="0" min="0" readonly>
         <button onclick="changeQty(this, 1)">+</button>
       </div>
-      <div class="total">Total: R$ <span class="total-price">6.00</span></div>
-      <button class="add-to-cart" onclick="addToCart(this)">Selecionar e Ir ao Pagamento</button>
-    </div>
+      <div class="total">Total: R$ <span class="total-price">6.00</span></div></div>
+
+          <div class="item bebidas">
+      <h2>Cappucino</h2>
+      <p>Cremoso com espuma</p>
+      <span class="price" data-price="8.00">R$ 8,00</span>
+      <div class="controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <input type="number" value="0" min="0" readonly>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <div class="total">Total: R$ <span class="total-price">8.00</span></div></div>
+
+          <div class="item bebidas">
+      <h2>Chocolate Quente</h2>
+      <p>Com marshmallow e jurupinga</p>
+      <span class="price" data-price="10.00">R$ 10,00</span>
+      <div class="controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <input type="number" value="0" min="0" readonly>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <div class="total">Total: R$ <span class="total-price">10.00</span></div></div>
+
+
+
 
     <div class="item lanches">
-      <h2>Sanduíche Natural</h2>
-      <p>Frango com salada</p>
+      <h2>Pão de queijo</h2>
+      <p>10 unidades</p>
       <span class="price" data-price="12.00">R$ 12,00</span>
       <div class="controls">
         <button onclick="changeQty(this, -1)">-</button>
-        <input type="number" value="1" min="1" readonly>
+        <input type="number" value="0" min="0" readonly>
         <button onclick="changeQty(this, 1)">+</button>
       </div>
-      <div class="total">Total: R$ <span class="total-price">12.00</span></div>
-      <button class="add-to-cart" onclick="addToCart(this)">Selecionar e Ir ao Pagamento</button>
-    </div>
+      <div class="total">Total: R$ <span class="total-price">12.00</span></div></div>
+
+          <div class="item lanches">
+      <h2>Waffles</h2>
+      <p>Com queijo</p>
+      <span class="price" data-price="12.00">R$ 12,00</span>
+      <div class="controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <input type="number" value="0" min="0" readonly>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <div class="total">Total: R$ <span class="total-price">12.00</span></div></div>
+
+          <div class="item lanches">
+      <h2>Waffles</h2>
+      <p>Nutella & peanut butter</p>
+      <span class="price" data-price="15.00">R$ 15,00</span>
+      <div class="controls">
+        <button onclick="changeQty(this, -1)">-</button>
+        <input type="number" value="0" min="0" readonly>
+        <button onclick="changeQty(this, 1)">+</button>
+      </div>
+      <div class="total">Total: R$ <span class="total-price">15.00</span></div>
+
+
+
   </main>
+      <main>  <button class="add-to-cart" onclick="addToCart(this)">Selecionar e Ir ao Pagamento</button></main>
+    </div>
+
 
   <div id="cart-summary" class="cart-summary hidden"></div>
 
@@ -53,7 +102,7 @@
     <button onclick="enviarParaWhatsapp()">Confirmar Pedido no WhatsApp</button>
   </div>
 
-  <footer><p>© 2025 Cafill Refill</p></footer>
+  <footer><center><p>© 2025 Cafill Refill</p></center></footer>
   <script src="script.js"></script>
 </body>
 </html>
