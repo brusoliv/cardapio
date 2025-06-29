@@ -75,7 +75,7 @@ function enviarParaWhatsapp() {
   mensagem += `\nTotal: R$ ${total.toFixed(2)}\n`;
   mensagem += `\nAguardo confirmação. Obrigado!`;
   const textoCodificado = encodeURIComponent(mensagem);
-  const numero = "5511999999999"; // Substitua pelo seu número do WhatsApp
+  const numero = "5519999274500"; // Substitua pelo seu número do WhatsApp
   const url = `https://wa.me/${numero}?text=${textoCodificado}`;
   window.open(url, '_blank');
 }
