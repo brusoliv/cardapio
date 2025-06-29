@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cardápio Interativo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cafill Refill</h1>
+    <p>Explore nosso cardápio digital</p>
+    <nav>
+      <button onclick="filterMenu('all')">Tudo</button>
+     <!--<button onclick="filterMenu('bebidas')">Bebidas</button>
+      <button onclick="filterMenu('lanches')">Lanches</button>-->
+    </nav>
+  </header>
+
+  <main id="menu">
+    <div class="item bebidas">
+  <h2>Café Espresso</h2>
+  <p>Intenso e encorpado</p>
+  <span class="price" data-price="6.00">R$ 6,00</span>
+
+  <div class="controls">
+    <button onclick="changeQty(this, -1)">-</button>
+    <input type="number" value="0" min="0" readonly>
+    <button onclick="changeQty(this, 1)">+</button>
+  </div>
+
+  <div class="total">
+    Total: R$ <span class="total-price">6.00</span>
+  </div></div>
+
+      <div class="item bebidas">
+  <h2>Cappucino</h2>
+  <p>Cremoso com espuma</p>
+  <span class="price" data-price="8.00">R$ 8,00</span>
+
+  <div class="controls">
+    <button onclick="changeQty(this, -1)">-</button>
+    <input type="number" value="0" min="0" readonly>
+    <button onclick="changeQty(this, 1)">+</button>
+  </div>
+
+  <div class="total">
+    Total: R$ <span class="total-price">8.00</span>
+  </div></div>
+
+      <div class="item bebidas">
+  <h2>Chocolate Quente</h2>
+  <p>Marshmallow e Jurupinga</p>
+  <span class="price" data-price="8.00">R$ 8,00</span>
+
+  <div class="controls">
+    <button onclick="changeQty(this, -1)">-</button>
+    <input type="number" value="0" min="0" readonly>
+    <button onclick="changeQty(this, 1)">+</button>
+  </div>
+
+  <div class="total">
+    Total: R$ <span class="total-price">8.00</span>
+  </div></div>
+
+  <button class="add-to-cart" onclick="addToCart(this)">Selecionar e Ir ao Pagamento</button>
+
+
+
+
+
+  </main>
+
+  <footer>
+  <center>  <p>© 2025 Cafill Refill</p></center>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
