@@ -99,6 +99,18 @@ main {
   border-radius: 8px;
   font-size: 1.1rem;
 }
+.cart-summary button {
+  margin-top: 1rem;
+background: #e76f51;
+color: #fff;
+padding: 10px 16px;
+border: none;
+border-radius: 6px;
+font-size: 1rem;
+font-weight: bold;
+cursor: pointer;
+}
+
 .cart-summary.hidden {
   display: none;
 }
